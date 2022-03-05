@@ -5,7 +5,6 @@ import 'package:collection/collection.dart';
 const _numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const _expectedResult = [2, 4, 6, 8, 10];
 
-/// Imperative approach
 void filterEvensInImperativeStyle() {
   final _result = <int>[];
 
@@ -22,7 +21,6 @@ void filterEvensInImperativeStyle() {
   print('Imperative Evens ✅');
 }
 
-/// Declarative approach
 void filterEvensInDeclarativeStyle() {
   final _result = _numbers.where((element) => element % 2 == 0).toList();
 
