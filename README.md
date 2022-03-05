@@ -1,2 +1,3 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+## Functional Programming in Dart
+
+The code is part of an Article series that demonstrates Functional Programming concepts in Dart & Flutter.
