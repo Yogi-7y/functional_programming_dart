@@ -18,7 +18,7 @@ void filterEvensInImperativeStyle() {
     const ListEquality().equals(_result, _expectedResult),
     "Imperative approach - Expected: $_expectedResult, Actual: $_result",
   );
-  print('Imperative Evens ✅');
+  print('✅ filterEvensInImperativeStyle - Passed');
 }
 
 void filterEvensInDeclarativeStyle() {
@@ -29,5 +29,5 @@ void filterEvensInDeclarativeStyle() {
     "Declarative approach - Expected: $_expectedResult, Actual: $_result",
   );
 
-  print('Declarative Evens ✅');
+  print('✅ filterEvensInDeclarativeStyle - Passed');
 }
