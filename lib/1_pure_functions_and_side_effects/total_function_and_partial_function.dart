@@ -27,3 +27,27 @@ int? doubler2(int value) {
   if (value == 2) return 4;
   if (value == 3) return 6;
 }
+
+// --------------------------------------------------------------------------------
+
+void totalAndPartialFunctionUsingDivide() {
+  try {
+    partialDivide(10, 0);
+  } catch (e) {
+    assert(e is UnsupportedError); // IntegerDivisionByZeroException
+  }
+
+  final _divideTwo = totalDivide(10, 0);
+  assert(_divideTwo == double.infinity);
+  print('✅ totalAndPartialFunctionUsingDivide - passed!');
+}
+
+/// By default, dart does division by double. \
+/// When dividing by zero it won't throw an exception and instead return a double.infinity which is a constant in Dart.
+/// Hence, as the function is defined for all the possible inputs it is a total function.
+num totalDivide(int dividend, int divisor) => dividend / divisor;
+
+/// For using integer division we need to use the ~/ operator.  \
+/// This will perform integer division and when passed zero will throw an exception.
+/// As the function is not defined for all the possible inputs, which is zero in out case, it is a partial function.
+num partialDivide(int dividend, int dividor) => dividend ~/ dividor;

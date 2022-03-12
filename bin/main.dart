@@ -13,5 +13,6 @@ void main(List<String> args) {
   /// Part 1. Pure functions & Side effects
   totalFunctionVsPartialFunction();
   pureFunctionsAndSideEffects();
-  refrentialTransparency();
+  referentialTransparency();
+  totalAndPartialFunctionUsingDivide();
 }
