@@ -188,8 +188,8 @@ List<String> splitWords(String value) {
 Function composeN(List<Function> fns) {
   final _reversed = fns.reversed.toList();
 
-  return (x) {
-    for (Function fn in _reversed) {
+  return (dynamic x) {
+    for (final fn in _reversed) {
       x = fn(x);
     }
     return x;

@@ -8,25 +8,23 @@ const _expectedResult = [2, 4, 6, 8, 10];
 void filterEvensInImperativeStyle() {
   final _result = <int>[];
 
-  for (int i in _numbers) {
-    if (i % 2 == 0) {
-      _result.add(i);
-    }
+  for (final i in _numbers) {
+    if (i.isEven) _result.add(i);
   }
 
   assert(
-    const ListEquality().equals(_result, _expectedResult),
-    "Imperative approach - Expected: $_expectedResult, Actual: $_result",
+    const ListEquality<int>().equals(_result, _expectedResult),
+    'Imperative approach - Expected: $_expectedResult, Actual: $_result',
   );
   print('✅ filterEvensInImperativeStyle - Passed');
 }
 
 void filterEvensInDeclarativeStyle() {
-  final _result = _numbers.where((element) => element % 2 == 0).toList();
+  final _result = _numbers.where((element) => element.isEven).toList();
 
   assert(
-    const ListEquality().equals(_result, _expectedResult),
-    "Declarative approach - Expected: $_expectedResult, Actual: $_result",
+    const ListEquality<int>().equals(_result, _expectedResult),
+    'Declarative approach - Expected: $_expectedResult, Actual: $_result',
   );
 
   print('✅ filterEvensInDeclarativeStyle - Passed');

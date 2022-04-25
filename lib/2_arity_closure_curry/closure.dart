@@ -9,7 +9,7 @@ void main(List<String> args) {
 }
 
 Function _firstFunction() {
-  final _someValue = 'First function scope';
+  const _someValue = 'First function scope';
 
   void _secondFunction() {
     print(_someValue);

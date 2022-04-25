@@ -1,6 +1,8 @@
 // Arity.
 // The arity of a function is defined by the number of arguments the function takes.
 
+// ignore_for_file: use_is_even_rather_than_modulo
+
 /// The arity of [increment] is 1.
 /// Function taking a single argument is known as a unary function.
 int increment(int number) => number + 1;

@@ -11,7 +11,7 @@ int increment(int value) => value + 1;
 int doubler(int value) => value * 2;
 
 /// Order of compositon is from right to left.
-Function compose(Function f, Function g) => (x) => f(g(x));
+Function compose(Function f, Function g) => (dynamic x) => f(g(x));
 
 /// Order of compositon is from left to right.
-Function pipe(Function f, Function g) => (x) => g(f(x));
+Function pipe(Function f, Function g) => (dynamic x) => g(f(x));

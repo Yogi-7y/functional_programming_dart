@@ -12,4 +12,4 @@ void main(List<String> args) {
 String toUpper(String value) => value.toUpperCase();
 String exclaim(String value) => '$value!';
 
-Function compose(Function f, Function g) => (x) => f(g(x));
+Function compose(Function f, Function g) => (dynamic x) => f(g(x));

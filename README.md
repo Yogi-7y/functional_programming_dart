@@ -8,3 +8,4 @@ The code is part of an Article series that demonstrates Functional Programming c
 1. [Pure Functions & Side Effects](https://yogi-6.medium.com/pure-functions-side-effects-in-dart-functional-programming-part-1-fb931d6c0351)
 2. [Arity, Closure, Currying, Partial Application & more](https://levelup.gitconnected.com/arity-closure-currying-partial-application-more-in-dart-functional-programming-part-2-4534a8b7f374)
 3. [Composition](https://levelup.gitconnected.com/composition-in-flutter-dart-functional-programming-part-3-ffba917aee3d)
+4. [Immutability & Equality](https://levelup.gitconnected.com/immutability-equality-in-flutter-dart-functional-programming-part-4-339a4e9312bb)
