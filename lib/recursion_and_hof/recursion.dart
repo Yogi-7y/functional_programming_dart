@@ -1,8 +1,8 @@
+// Take a number and return the sum of all the numbers from 1 to that number.
+// Example:
+// sum(4) == 4 + 3 + 2 + 1 == 10
+
 void main(List<String> args) {
-  // Problem:
-  // Take a number and return the sum of all the numbers from 1 to that number.
-  // Example:
-  // sum(4) == 4 + 3 + 2 + 1 == 10
   final _iterativeSumResult = _iterativeSum(5);
   print(_iterativeSumResult); // 15
 
