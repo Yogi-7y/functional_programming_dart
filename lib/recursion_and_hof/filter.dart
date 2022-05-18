@@ -6,7 +6,6 @@ const _arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 void main(List<String> args) {
   // Imperative approach
-
   final _result = <int>[];
 
   for (final element in _arr) {
@@ -17,8 +16,11 @@ void main(List<String> args) {
 
   print(_result); // [2, 4, 6, 8, 10]
 
-  // Declarative approach
+  // Declarative approach: .where in Dart lists
+  final _result2 = _arr.where((element) => element.isEven).toList();
+  print(_result2); // [2, 4, 6, 8, 10]
 
+  // Declarative approach: Functional API
   final _evens = filter<int>(isEven, _arr);
   print(_evens); // [2, 4, 6, 8, 10]
 

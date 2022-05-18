@@ -25,6 +25,7 @@ linter:
     avoid_print: false
     prefer_asserts_with_message: false
     avoid_catches_without_on_clauses: false
+    no_leading_underscores_for_local_identifiers: false
     sort_constructors_first: false
     cascade_invocations: false
     avoid_annotating_with_dynamic: false

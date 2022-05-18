@@ -16,7 +16,7 @@ void main(List<String> args) {
 
   // Functional API
   final _result = reduce<int>(
-    (accumulator, currentElement) => accumulator + currentElement,
+    (accumulator, element) => accumulator + element,
     _arr,
     0,
   );
@@ -41,16 +41,19 @@ int _sumAllImperative(List<int> arr) {
 /// Reduces the [Iterable] to a single value. \
 /// In step 1, accumulator is set to the first element of the [Iterable]. \
 /// For every other steps, Accumulator is the result of the previous reduction. \
-/// Input: [1, 2, 3, 4, 5] \
-/// Step 1: Accumulator = 0 & currentElement = 1 | accumulator + currentElement = 1 \
-/// Step 2: Accumulator = 1 & currentElement = 2 | accumulator + currentElement = 3 \
-/// Step 3: Accumulator = 3 & currentElement = 3 | accumulator + currentElement = 6 \
-/// Step 4: Accumulator = 6 & currentElement = 4 | accumulator + currentElement = 10 \
-/// Step 5: Accumulator = 10 & currentElement = 5 | accumulator + currentElement = 15 \
-int _sumAllReduce(List<int> arr) =>
-    arr.reduce((accumulator, currentElement) => accumulator + currentElement);
+/// Input: [0, 1, 2, 3, 4, 5] \
+/// Step 1: Accumulator = 0 & element = 1 | accumulator + element = 1 \
+/// Step 2: Accumulator = 1 & element = 2 | accumulator + element = 3 \
+/// Step 3: Accumulator = 3 & element = 3 | accumulator + element = 6 \
+/// Step 4: Accumulator = 6 & element = 4 | accumulator + element = 10 \
+/// Step 5: Accumulator = 10 & element = 5 | accumulator + element = 15 \
+int _sumAllReduce(List<int> arr) => arr.reduce(
+      (accumulator, element) => accumulator + element,
+    );
 
 /// Fold Implementation \
 /// Fold is similar to reduce, but we can pass in the initial value of the accumulator. \
-int _sumAllFold(List<int> arr) =>
-    arr.fold(0, (accumulator, currentElement) => accumulator + currentElement);
+int _sumAllFold(List<int> arr) => arr.fold(
+      0,
+      (accumulator, element) => accumulator + element,
+    );
