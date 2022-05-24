@@ -1,5 +1,10 @@
 import 'package:dartz/dartz.dart';
 
+// Flatten: Returns a new collection by taking every element in the collection, and it's subcollection and putting everything into a new collection with single depth.
+// Example: [1, 2, [3, 4], 5, [6, 7, [8, 9]]] => [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// flatMap: is a combination of map and flatten. It takes a function and applies it to every element in the collection, and it's subcollection. After mapping, it flattens the result.
+
 final _arr = IList.from([
   1,
   2,
