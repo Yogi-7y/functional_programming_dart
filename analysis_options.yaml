@@ -1,39 +1,39 @@
 
-include: all_lint_rules.yaml
+# include: all_lint_rules.yaml
 
-analyzer:
-  language:
-    strict-inference: true
-    strict-raw-types: true
-  strong-mode:
-    implicit-casts: false
-    implicit-dynamic: false
-  errors:
-    included_file_warning: ignore
+# analyzer:
+#   language:
+#     strict-inference: true
+#     strict-raw-types: true
+#   strong-mode:
+#     implicit-casts: false
+#     implicit-dynamic: false
+#   errors:
+#     included_file_warning: ignore
 
-linter:
-  rules:
-    require_trailing_commas: false
-    prefer_final_parameters: false
-    always_put_control_body_on_new_line: false
-    prefer_double_quotes: false
-    always_specify_types: false
-    unnecessary_final: false
-    always_use_package_imports: false
-    lines_longer_than_80_chars: false
-    public_member_api_docs: false
-    avoid_print: false
-    prefer_asserts_with_message: false
-    avoid_catches_without_on_clauses: false
-    no_leading_underscores_for_local_identifiers: false
-    sort_constructors_first: false
-    cascade_invocations: false
-    avoid_annotating_with_dynamic: false
-    avoid_dynamic_calls: false
-    prefer_expression_function_bodies: false
-    omit_local_variable_types: false
-    prefer_final_locals: false
-    avoid_types_on_closure_parameters: false
-    use_string_buffers: false
+# linter:
+#   rules:
+#     require_trailing_commas: false
+#     prefer_final_parameters: false
+#     always_put_control_body_on_new_line: false
+#     prefer_double_quotes: false
+#     always_specify_types: false
+#     unnecessary_final: false
+#     always_use_package_imports: false
+#     lines_longer_than_80_chars: false
+#     public_member_api_docs: false
+#     avoid_print: false
+#     prefer_asserts_with_message: false
+#     avoid_catches_without_on_clauses: false
+#     no_leading_underscores_for_local_identifiers: false
+#     sort_constructors_first: false
+#     cascade_invocations: false
+#     avoid_annotating_with_dynamic: false
+#     avoid_dynamic_calls: false
+#     prefer_expression_function_bodies: false
+#     omit_local_variable_types: false
+#     prefer_final_locals: false
+#     avoid_types_on_closure_parameters: false
+#     use_string_buffers: false
     
     
